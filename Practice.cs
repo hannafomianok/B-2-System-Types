@@ -4,25 +4,92 @@ namespace ConsoleApp7
 {
     public class Practice
     {
-        /// <summary>
+        ///<summary>
         /// B2-P1/1. TypeConvert. Преобразование типов используя явное, неявное преобразование и класс Convert.
-        /// </summary>
+        ///</summary>
+        ///я закомментила все, что нельзя явно и неявно преобразовать, чтобы оно отработало
         public static void B2_P1_1_TypeConvert()
         {
             string name = "Olga";
-            string hasPhoto = "True";
-            string flatNumber = "34";
+            //char charname1 = name; //implicit
+            //char charname2 = (char)name; //explicit
+            //char charname3 = Convert.ToChar(name); Не может преобразовать так как длина строки должна составлять один знак.
 
-            char sex = 'М';
+            string hasPhoto = "True";
+            //bool boolhasPhoto1 = hasPhoto; //implicit
+            //bool boolhasPhoto2 = (bool)hasPhoto; //explicit
+            bool boolhasPhoto3 = Convert.ToBoolean(hasPhoto); //Convert
+
+            string flatNumber = "34";
+            //decimal decimalflatNumber1 = flatNumber; //implicit
+            //decimal decimalflatNumber2 = (decimal)flatNumber; //explicit
+            decimal decimalflatNumber3 = Convert.ToDecimal(flatNumber); //Convert
+
+            //int intflatNumber1 = flatNumber; //implicit
+            //int intflatNumber2 = (int)flatNumber; //explicit
+            int intflatNumber3 = Convert.ToInt32(flatNumber); //Convert
+            int intflatNumber4 = int.Parse(flatNumber); //Parse
+
+            char sex = NewMethod();
+            //string stringsex1 = sex; //implicit
+           //string stringsex2 = (string)sex; //explicit
+            string stringsex3 = Convert.ToString(sex); //Convert
+
             char place = '3';
+            decimal decimalplace1 = place; //implicit
+            decimal decimalplace2 = (Decimal)place; //explicit
+            decimal decimalplace3 = Convert.ToDecimal(place); //Convert
+
+            int intplace1 = place; // implicit
+            int intplace2 = (int)place; //explicit
+            int intplace3 = Convert.ToInt32(place); //Convert
+
             char hasFingerPrints = '0';
+            //bool boolhasFingerPrints1 = hasFingerPrints; //implicit
+            //bool boolhasFingerPrints2 = (bool)hasFingerPrints; //explicit
+            bool boolhasFingerPrints3 = Convert.ToBoolean(hasFingerPrints); //Convert
 
             bool hasFree2Pages = false;
+            //char charhasFree2Pages1 = hasFree2Pages; //implicit
+            //char charhasFree2Pages2 = (char)hasFree2Pages; //explicit
+            char charhasFree2Pages3 = Convert.ToChar(hasFree2Pages); //Convert
 
-            double visaPrice = 60;
-            double photoPrice = 7.5;
+            float visaPrice = 60f;
+            //char charvisaPrice1 = visaPrice; //implicit
+            char charvisaPrice2 = (char)visaPrice; //explicit
+            char charvisaPrice3 = Convert.ToChar(visaPrice); //Convert
+
+            //bool boolvisaPrice1 = visaPrice; //implicit
+            //bool boolvisaPrice2 = (bool)visaPrice; //explicit
+            bool boolvisaPrice3 = Convert.ToBoolean(visaPrice); //Convert
+
+            float photoPrice = 7.5f;
+            //string stringphotoPrice1 = photoPrice; //implicit
+            //string stringphotoPrice2 = (string)photoPrice; //explicit
+            string stringphotoPrice3 = Convert.ToString(photoPrice); //Convert
+
+            //int intphotoPrice1 = photoPrice; //implicit
+            int intphotoPrice2 = (int)photoPrice; //explicit
+            int intphotoPrice3 = Convert.ToInt32(photoPrice); //Convert
 
             int birthYear = 2000;
+            //char intbirthYear1 = birthYear; //implicit
+            char intbirthYear2 = (char)birthYear; //explicit
+            char intbirthYear3 = Convert.ToChar(birthYear); //Convert
+
+            //bool boolbirthYear1 = birthYear; //implicit
+           //bool boolbirthYear2 = (bool)birthYear; //explicit
+            bool boolbirthYear3 = Convert.ToBoolean(birthYear); //Convert
+
+            decimal decimalbrthYear1 = birthYear; //implicit
+            decimal decimalbrthYear2 = (decimal)birthYear; //explicit
+            decimal decimalbrthYear3 = Convert.ToDecimal(birthYear); //Convert
+
+            //string stringbirthYear1 = birthYear; //implicit
+            //string stringbirthYear2 = (string)birthYear; //explicit
+            string stringbirthYear3 = Convert.ToString(birthYear); //Convert
+
+
 
             //1. CHAR CONVERSION 
             //1.1 CHAR to STRING
@@ -34,9 +101,9 @@ namespace ConsoleApp7
             //1.2 CHAR to BOOL
 
             //1.3 CHAR to DECIMAL
-                    
+
             //1.4 CHAR to INT
-           
+
             //2. STRING CONVERSION
 
             //2.1 STRING to CHAR
@@ -44,38 +111,43 @@ namespace ConsoleApp7
             //2.2 STRING to BOOL
 
             //2.3 STRING to DECIMAL
-      
+
             //2.4 STRING to INT
-          
+
             //3. BOOL CONVERSION
 
             //3.1 BOOL to CHAR
-           
+
             //3.2 BOOL to STRING
-           
+
             //3.3 BOOL to DECIMAL
-          
+
             //3.4 BOOL to INT
-          
+
             //4. DECIMAL CONVERSION
 
             //4.1 DECIMAL to CHAR
-         
+
             //4.2 DECIMAL to BOOL
-          
+
             //4.3 DECIMAL to STRING
-          
+
             //4.4 DECIMAL to INT
-          
+
             //5. INT CONVERSION         
 
             //5.1 INT to CHAR
-          
+
             //5.2 INT to BOOL
-           
+
             //5.3 INT to DECIMAL
-         
+
             //5.4 INT to STRING
+        }
+
+        private static char NewMethod()
+        {
+            return 'М';
         }
     }
 }

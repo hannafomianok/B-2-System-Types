@@ -6,8 +6,7 @@ namespace ConsoleApp7
     {
         static void Main(string[] args)
         {
-            //Practice.B2_P1_1_TypeConvert();
-            Lesson.TypeFromConvertExample();
+            Practice.B2_P1_1_TypeConvert();
             Console.ReadLine();
         }
     }
