@@ -20,74 +20,120 @@ namespace ConsoleApp7
             //bool boolhasPhoto2 = (bool)hasPhoto; //explicit
             bool boolhasPhoto3 = Convert.ToBoolean(hasPhoto); //Convert
 
+            Console.WriteLine(boolhasPhoto3);
+
             string flatNumber = "34";
             //decimal decimalflatNumber1 = flatNumber; //implicit
             //decimal decimalflatNumber2 = (decimal)flatNumber; //explicit
             decimal decimalflatNumber3 = Convert.ToDecimal(flatNumber); //Convert
+
+            Console.WriteLine(decimalflatNumber3);
 
             //int intflatNumber1 = flatNumber; //implicit
             //int intflatNumber2 = (int)flatNumber; //explicit
             int intflatNumber3 = Convert.ToInt32(flatNumber); //Convert
             int intflatNumber4 = int.Parse(flatNumber); //Parse
 
+            Console.WriteLine(intflatNumber3);
+            Console.WriteLine(intflatNumber4);
+
             char sex = NewMethod();
             //string stringsex1 = sex; //implicit
            //string stringsex2 = (string)sex; //explicit
             string stringsex3 = Convert.ToString(sex); //Convert
 
+            Console.WriteLine(stringsex3);
+
             char place = '3';
             decimal decimalplace1 = place; //implicit
             decimal decimalplace2 = (Decimal)place; //explicit
-            decimal decimalplace3 = Convert.ToDecimal(place); //Convert
+            //decimal decimalplace3 = Convert.ToDecimal(place); //Convert
+
+            Console.WriteLine(decimalplace1);
+            Console.WriteLine(decimalplace2);
+
 
             int intplace1 = place; // implicit
             int intplace2 = (int)place; //explicit
             int intplace3 = Convert.ToInt32(place); //Convert
 
+            Console.WriteLine(intplace1);
+            Console.WriteLine(intplace2);
+            Console.WriteLine(intplace3);
+
+
             char hasFingerPrints = '0';
             //bool boolhasFingerPrints1 = hasFingerPrints; //implicit
             //bool boolhasFingerPrints2 = (bool)hasFingerPrints; //explicit
-            bool boolhasFingerPrints3 = Convert.ToBoolean(hasFingerPrints); //Convert
+            //bool boolhasFingerPrints3 = Convert.ToBoolean(hasFingerPrints); //Convert
 
             bool hasFree2Pages = false;
             //char charhasFree2Pages1 = hasFree2Pages; //implicit
             //char charhasFree2Pages2 = (char)hasFree2Pages; //explicit
-            char charhasFree2Pages3 = Convert.ToChar(hasFree2Pages); //Convert
+            //char charhasFree2Pages3 = Convert.ToChar(hasFree2Pages); //Convert
 
-            float visaPrice = 60f;
+            float visaPrice = 60;
             //char charvisaPrice1 = visaPrice; //implicit
             char charvisaPrice2 = (char)visaPrice; //explicit
-            char charvisaPrice3 = Convert.ToChar(visaPrice); //Convert
+           //char charvisaPrice3 = Convert.ToChar(visaPrice); //Convert
+
+            Console.WriteLine(charvisaPrice2);
+
 
             //bool boolvisaPrice1 = visaPrice; //implicit
             //bool boolvisaPrice2 = (bool)visaPrice; //explicit
             bool boolvisaPrice3 = Convert.ToBoolean(visaPrice); //Convert
+
+            Console.WriteLine(boolvisaPrice3);
+
 
             float photoPrice = 7.5f;
             //string stringphotoPrice1 = photoPrice; //implicit
             //string stringphotoPrice2 = (string)photoPrice; //explicit
             string stringphotoPrice3 = Convert.ToString(photoPrice); //Convert
 
+            Console.WriteLine(stringphotoPrice3);
+
+
             //int intphotoPrice1 = photoPrice; //implicit
             int intphotoPrice2 = (int)photoPrice; //explicit
             int intphotoPrice3 = Convert.ToInt32(photoPrice); //Convert
+
+            Console.WriteLine(intphotoPrice2);
+            Console.WriteLine(intphotoPrice3);
+
 
             int birthYear = 2000;
             //char intbirthYear1 = birthYear; //implicit
             char intbirthYear2 = (char)birthYear; //explicit
             char intbirthYear3 = Convert.ToChar(birthYear); //Convert
 
+            Console.WriteLine(intbirthYear2);
+            Console.WriteLine(intbirthYear3);
+
+
             //bool boolbirthYear1 = birthYear; //implicit
-           //bool boolbirthYear2 = (bool)birthYear; //explicit
+            //bool boolbirthYear2 = (bool)birthYear; //explicit
             bool boolbirthYear3 = Convert.ToBoolean(birthYear); //Convert
+
+            Console.WriteLine(boolbirthYear3);
+
 
             decimal decimalbrthYear1 = birthYear; //implicit
             decimal decimalbrthYear2 = (decimal)birthYear; //explicit
             decimal decimalbrthYear3 = Convert.ToDecimal(birthYear); //Convert
 
+            Console.WriteLine(decimalbrthYear1);
+            Console.WriteLine(decimalbrthYear2);
+            Console.WriteLine(decimalbrthYear3);
+
+
             //string stringbirthYear1 = birthYear; //implicit
             //string stringbirthYear2 = (string)birthYear; //explicit
             string stringbirthYear3 = Convert.ToString(birthYear); //Convert
+
+            Console.WriteLine(stringbirthYear3);
+
 
 
 
